@@ -1,5 +1,5 @@
-
 #include <stdio.h>
+#include <math.h>
 
 int main (){
     /*Operadores aritmeticos 
@@ -7,15 +7,17 @@ int main (){
     subtração (-)
     divisão(/)
     multiplicação(*)
-    modulo(%) */
+    modulo(%) 
+    potencia (pow (n/p))*/
+    
     
 //Declaraçao de variaveis
  int num1, num2, soma, sub, mult, mod, pot;
  float div;
 
 //Pedido de dados
-
 printf("________________________________\n");
+
 printf("Digite os numeros para somar:\n");
 printf("Numero1:");
 scanf("%d",&num1);
@@ -33,15 +35,14 @@ pot = pow(num1,num2);
 div = (float)num1/(float)num2;
 
 //Puxando o resultado
-printf("--------------------------------\n");
+printf("\n------------------------------");
 printf("\nResultado:");
 printf("\nSoma:%d",soma);
-printf("\nDivisão:%.0f",div);
 printf("\nSubtração:%d",sub);
-printf("\nModulo:%d%",mod);
 printf("\nMultiplicação:%d",mult);
+printf("\nDivisão:%.0f",div);
 printf("\nPotência:%d",pot);
-
+printf("\nModulo:%d%",mod);
 
 
 printf("\n________________________________\n");
