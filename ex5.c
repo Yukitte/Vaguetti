@@ -5,32 +5,33 @@
 //Variaveis
 int main(){
 float merc,frete,desp,custo,venda;
-int mod;
+float mod;
 
 //Coletando valor de variaveis 
 printf("________________________________\n");
 
-printf("Custos:\n");
-printf("Mercadoria:R$");
+printf("Custos:");
+printf("\nMercadoria:R$");
 scanf("%f",&merc);
 
 printf("\nFrete:R$");
 scanf("%f",&frete);
 
 printf("\nDespesas eventuais:R$");
-scanf("%f\n",&desp);
+scanf("%f",&desp);
+fflush(stdin);
 
 printf("\nValor da venda:R$");
-scanf("%f\n",&venda);
+scanf("%f",&venda);
 
 //calculos
 custo = merc + frete + desp;
-mod = venda % custo;
+mod = ((venda - custo)/custo)*100 ;
 
 //retorno 
 printf("\n------------------------------");
 
-printf("\nPorcentagem de lucro:%d",mod);
+printf("\nPorcentagem de lucro:%.2f%% ",mod);
 
 printf("\n________________________________\n");
     return 0;
