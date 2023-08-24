@@ -9,24 +9,22 @@ printf("\n________________________________\n");
 printf("Salário fixo:");
 scanf("%f",&fix);
 
-printf("\nBonus por carro vendido:");
-scanf("%f",&bonus);
-
 printf("\nValor total de vendas:");
 scanf("%f",&valor);
 
-printf("\nNumero de carros:");
+printf("\nBonus por carro vendido:");
+scanf("%f",&bonus);
+
+printf("\nNumero de carros vendidos:");
 scanf("%d",&car);
 
-
-
-par = (bonus*car)/100;
+par = (bonus*car);
 var = (valor*5)/100;
 total = fix + var + par;
 
-
 printf("\n------------------------------");
 printf("\nRecebe por carro : %.3f", var);
+printf("\nRecebe por bonus : %.3f", par);
 printf("\nSalário bruto : %.3f", total);
 printf("\n________________________________\n");
 
