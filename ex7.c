@@ -15,7 +15,7 @@ total1 = dia1 + mes1*30 + ano1*365;
 resultado = total1 -total;
 
 printf("\n------------------------------");
-printf("\nDias de vida: %d",total);
+printf("\nNascimento JC- Seu nascimento: %d",total);
 printf("\nDias de vida: %d",resultado);
 printf("\n________________________________\n");
 
